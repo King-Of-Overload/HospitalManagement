@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+<!-- default encoding method working on request&&response -->
+<constant name="struts.i18n.encoding" value="UTF-8"/>
+<!-- specify request suffix -->
+<constant name="struts.action.extension" value="do,go,php"/>
+<!-- set browser cache static content or not  development mode:false-->
+<constant name="struts.serve.static.browserCache" value="false"/>
+<!-- when struts.xml changed,load it automatically -->
+<constant name="struts.configuration.xml.reload" value="true"/>
+<!-- log more error info -->
+<constant name="struts.devMode" value="false"/>
+<!-- limit the size of uploading files -->
+<constant name="struts.multipart.maxSize" value="10701096"/> 
+
+
+
+<package name="struts" extends="struts-default">
+<action name="user_*" class="alan.zjc.user.action.UserAction" method="{1}">
+<result name="gotoLogin">/login.jsp</result>
+<result name="updatePasswordUI">/updatePassword.jsp</result>
+</action>
+
+<action name="register_*" class="alan.zjc.register.action.RegisterAction" method="{1}">
+<result name="firstRegister">/firstRegister.jsp</result>
+<result name="gotoSecondRegister">/inputDignostId.jsp</result>
+</action>
+
+<action name="dignost_*" class="alan.zjc.dignost.action.DignostAction" method="{1}">
+<result name="showAllDignost">/showAllDignost.jsp</result>
+<result name="goToDignost">/dignost.jsp</result>
+<result name="updateDignostUI">/updateDignost.jsp</result>
+</action>
+
+</package>
+
+
+
+</struts>

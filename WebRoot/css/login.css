@@ -1,0 +1,70 @@
+/* CSS Document */
+body {
+	background-image: url("/ShaoXingLightTexttile/images/login_back.jpg");
+	background-repeat:no-repeat ;
+  background-color:#FFFFB0;
+}
+.main{margin-left: 250px; margin-top: 30px;}
+.imageDiv{float: left;
+margin-top: 7%;
+}
+.img{width: 450px;
+height: 39%;
+}
+.login1{
+	width: 525px; 
+	height: 370px; 
+	border: 1px solid #d1d1cf; 
+	float: left; 
+	background-color: #f4f4f4;
+	margin-top: 14%;
+	margin-left:28%;
+
+	filter:alpha(Opacity=50); 
+	opacity: 0.8; 
+	}
+.login2{width:550px; height:420px; background-color: #ffffff;}
+.loginTopDiv {padding: 30px;
+}
+.loginTop {color: #696969; font-size: 20px; font-weight: 900;}
+.registBtn {
+	background: url(/ShaoXingLightTexttile/images/login_sprites_20110808.png);
+	display: inline-block;
+	background-position: 0px -46px;
+	height: 24px;
+	width: 73px;	
+	margin-left: 400px;
+}
+.registBtn:HOVER {
+	background: url("/ShaoXingLightTexttile/images/login_sprites_20110808.png");
+	display: inline-block;
+	background-position: -73px -46px;
+	height: 24px;
+	width: 73px;
+	margin-left: 400px;
+}
+
+table {margin-left: 90px;font-size: 12pt;color: #404040; font-weight: bold;}
+.input {width: 235px;height: 26px;border: 1px solid #d9d9d9;padding-top: 8px; padding-left: 8px;}
+.yzm {width: 90px;height: 26px;border: 1px solid #d9d9d9;vertical-align: middle; margin-right: 30px;padding-top: 4px;padding-left: 8px;}
+label.error {color:#cc3300;font-weight: 900;}
+#vCode {margin-right: 30px; vertical-align: middle;width: 70px;height: 26px;border: 1px solid #000;}
+.loginBtn {border: 0px; width: 92px; height: 27px;}
+
+/*µ×²¿*/
+.footer{
+	text-align:center; 
+	line-height:32px; 
+	margin-top:8%;
+	padding:50px 0;
+	font-size: 23px; 
+	font-weight:bold;
+	color: black; 
+	font-style: normal;}
+
+
+
+
+
+
+
